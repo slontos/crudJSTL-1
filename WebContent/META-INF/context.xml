@@ -5,7 +5,7 @@
        type="javax.sql.DataSource" 
        username="crud" password="boubis13"
        driverClassName="com.mysql.jdbc.Driver"
-       url="jdbc:mysql://mysql-crud.alwaysdata.net/crud_exo" 
+       url="jdbc:mysql://mysql-crud.alwaysdata.net:3306/crud_exo" 
    /> 
 </Context> 
 
