@@ -1,0 +1,11 @@
+p,h1{
+	text-align: center;
+}
+table {
+	position: absolute;
+  	left: 50%;
+  	transform: translateX(-50%);
+}
+table tr th{
+	background-color: lightgrey;
+}

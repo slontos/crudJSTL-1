@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Context>
+   <Resource name="jdbc/crud_exo" 
+       type="javax.sql.DataSource" 
+       username="crud" password="boubis13"
+       driverClassName="com.mysql.jdbc.Driver"
+       url="jdbc:mysql://mysql-crud.alwaysdata.net" 
+   /> 
+</Context> 
+
