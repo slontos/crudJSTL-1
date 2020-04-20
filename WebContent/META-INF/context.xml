@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xml>
 <Context>
-   <Resource name="jdbc/crud_exo" auth="Container"
+   <Resource name="jdbc/crud_exo" auth="Container" sslmode="require"
        type="javax.sql.DataSource" 
        maxActive="20"  maxIdle="10"  maxWait="100000"
        username="crud" password="boubis13"
