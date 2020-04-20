@@ -6,7 +6,7 @@
        maxActive="20"  maxIdle="10"  maxWait="100000"
        username="crud" password="boubis13"
        driverClassName="com.mysql.jdbc.Driver"
-       url="jdbc:mysql://mysql-crud.alwaysdata.net/crud_exo" 
+       url="jdbc:mysql://mysql-crud.alwaysdata.net:3306/crud_exo" 
    /> 
 </Context> 
 

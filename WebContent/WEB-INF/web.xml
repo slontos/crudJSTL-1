@@ -5,7 +5,7 @@
    <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
   <resource-ref>
-    <description>mysql Datasource example</description>
+    <description>exo3 form authentification</description>
     <res-ref-name>jdbc/crud_exo</res-ref-name>
     <res-type>javax.sql.DataSource</res-type>
     <res-auth>Container</res-auth>
