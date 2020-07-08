@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xml>
 <Context>
-   <Resource name="jdbc/crud_exo" auth="Container" sslmode="require"
+   <Resource name="jdbc/crud_exo" auth="Container" sslmode="if available"
        type="javax.sql.DataSource" 
        maxActive="20"  maxIdle="10"  maxWait="100000"
-       username="crud" password="boubis13"
-       driverClassName="com.mysql.jdbc.Driver"
-       url="jdbc:mysql://mysql-crud.alwaysdata.net:3306/crud_exo" 
+       username="postgres" password="Spiros2610!"
+       driverClassName="org.postgresql.Driver"
+       url="jdbc:postgresql://localhost:5432/demo" 
    /> 
 </Context> 
-

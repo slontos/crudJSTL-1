@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="crudJSTL:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>crudJSTL</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="crudJSTL-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="crudJSTL:war exploded" />
+    </root>
+  </artifact>
+</component>

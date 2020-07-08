@@ -1,7 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
-
-
+<%request.setCharacterEncoding("UTF-8"); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,37 +13,35 @@
 
 	<c:catch var="exceptionThrown">
 		<sql:query var="users" dataSource="jdbc/crud_exo">
-         SELECT prenom, nom, motdepasse  FROM users
+         SELECT lastname, firstname, password  FROM users
          WHERE id = ?
-        <sql:param value="${param.id} " />
+        <sql:param value="${param.id}"/>
 		</sql:query>
 	</c:catch>
-
-	<form action="update.jsp">
+	<form action="update.jsp" method="post">
 		<table>
 			<tr>
 
-				<td><input type="hidden" name="id" value="${ param.id }" /></td>
+				<td><input type="hidden" name="id" value="${param.id}" /></td>
 			</tr>
 			<tr>
-				<td>Nom:</td>
-				<td><input type="text" name="nom" value="${ param.nom }" /></td>
-			</tr>
-
-			<tr>
-				<td>Prenom:</td>
-				<td><input type="text" name="prenom" value="${param.prenom}" /></td>
+				<td>lastname:</td>
+				<td><input type="text" name="lastname" value="${param.lastname}" /></td>
 			</tr>
 
 			<tr>
-				<td>Mot de passe:</td>
-				<td><input type="text" name="motdepasse"
-					value="${ param.motdepasse }" /></td>
+				<td>firstname:</td>
+				<td><input type="text" name="firstname" value="${param.firstname}" /></td>
+			</tr>
+
+			<tr>
+				<td>password</td>
+				<td><input type="text" name="password"value="${param.password}" /></td>
 			</tr>
 
 			<tr>
 				<td colspan="2"><input type="submit"
-					value="Enregistrer modification" /></td>
+					value="Change commited" /></td>
 			</tr>
 		</table>
 	</form>
